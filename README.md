@@ -14,10 +14,10 @@ A clean and simple Todo List app built with **Flask** and **SQLite**, styled wit
 - ✅ Delete tasks with one click
 - ✅ Persistent storage using **SQLite**
 - 🎨 Responsive UI with clean CSS styling
-
 ---
-## 📁 Project Structure
 
+## 📁 Project Structure
+---
 todo-list-app/ 
 ├── app.py # Main Flask application 
 ├── requirements.txt # Python dependencies 
