@@ -1,6 +1,2 @@
-Flask-SQLAlchemy
-Flask==3.0.3
-pandas==2.2.2
-numpy==1.26.4
-scikit-learn
-setuptools
+pip3 install -r requirements.txt
+python3 app.py
