@@ -9,9 +9,8 @@ db = SQLAlchemy(app)
 class Task(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(100), nullable=False)
-    description = db.Column(db.String(255))
+    description = db.Column(db.String(200))
     completed = db.Column(db.Boolean, default=False)
-
 
 with app.app_context():
     db.create_all()
@@ -31,11 +30,10 @@ def add():
         db.session.commit()
     return redirect(url_for('index'))
 
-
 @app.route('/complete/<int:id>')
 def complete(id):
     task = Task.query.get_or_404(id)
-    task.completed = not task.completed  # Toggle completed
+    task.completed = not task.completed
     db.session.commit()
     return redirect(url_for('index'))
 
@@ -46,6 +44,6 @@ def delete(id):
     db.session.commit()
     return redirect(url_for('index'))
 
-if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))  # Get port from Railway
-    app.run(host='0.0.0.0', port=port)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 3000))
+    app.run(host="0.0.0.0", port=port)
