@@ -17,7 +17,7 @@ A clean and simple Todo List app built with **Flask** and **SQLite**, styled wit
 ---
 
 ## 📁 Project Structure
----
+```
 todo-list-app/
 │
 ├── app.py            # Main Flask application
@@ -30,6 +30,7 @@ todo-list-app/
 │
 └── static/
     └── style.css     # CSS styling
+```
 ---
 ## 🧠 Tech Stack
 
