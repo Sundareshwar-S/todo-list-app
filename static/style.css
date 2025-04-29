@@ -79,3 +79,33 @@ li {
     text-decoration: none;
     font-size: 20px;
 }
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        align-items: flex-start;
+    }
+
+    .container {
+        width: 100%;
+        padding: 15px;
+        box-shadow: none; /* Optional: Remove shadow for a cleaner mobile look */
+    }
+
+    form input, form button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .task-content {
+        margin-bottom: 10px;
+    }
+
+    .task-actions a {
+        font-size: 18px;
+    }
+}
