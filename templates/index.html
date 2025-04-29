@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Todo List App</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v=1">
+    <style>
+        @media (max-width: 768px) {
+            body {
+                background-color: lightcoral; /* Temporary for testing */
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">

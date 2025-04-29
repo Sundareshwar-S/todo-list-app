@@ -1,3 +1,9 @@
+/* Global box-sizing rule */
+html {
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #e0f7fa;
@@ -27,7 +33,6 @@ form input, form button {
     padding: 10px;
     margin: 8px 0;
     width: 100%;
-    box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 16px;
@@ -43,11 +48,6 @@ form button {
 
 form button:hover {
     background-color: #004d40;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
 }
 
 ul {
@@ -79,14 +79,16 @@ li {
     text-decoration: none;
     font-size: 20px;
 }
+
 @media (max-width: 768px) {
     body {
-        padding: 10px;
-        align-items: flex-start;
+        padding: 0; /* Remove extra padding */
+        justify-content: flex-start; /* Align content to the top */
     }
 
     .container {
-        width: 100%;
+        width: 90%; /* Use 90% of the screen width */
+        max-width: none; /* Remove the max-width constraint */
         padding: 15px;
         box-shadow: none; /* Optional: Remove shadow for a cleaner mobile look */
     }
