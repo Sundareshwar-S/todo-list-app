@@ -18,15 +18,18 @@ A clean and simple Todo List app built with **Flask** and **SQLite**, styled wit
 
 ## 📁 Project Structure
 ---
-todo-list-app/ 
-├── app.py # Main Flask application 
-├── requirements.txt # Python dependencies 
-├── start.sh # Glitch startup script 
-├── .glitch.json # Glitch configuration 
-├── templates/ 
-│ └── index.html # HTML template (Jinja2) 
-└── static/ 
-└── style.css # CSS styling
+todo-list-app/
+│
+├── app.py            # Main Flask application
+├── requirements.txt  # Python dependencies
+├── start.sh          # Glitch startup script
+├── .glitch.json      # Glitch configuration
+│
+├── templates/
+│   └── index.html    # HTML template (Jinja2)
+│
+└── static/
+    └── style.css     # CSS styling
 ---
 ## 🧠 Tech Stack
 
